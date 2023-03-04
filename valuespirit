@@ -1,10 +1,10 @@
--- Yes you can skid it, but the name will be to popular lol
+-- Yes you can skid it, but the name will be to popular lol [ R.i.P. for those who copied the old one ]
 
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-    Name = "💹 value spirit > by Internal#5178",
-    LoadingTitle = "value spirit",
+    Name = "🍃 value spirit > by Internal#5178",
+    LoadingTitle = "🍃 value spirit",
     LoadingSubtitle = "by Internal#5178",
     ConfigurationSaving = {
        Enabled = true,
@@ -35,14 +35,13 @@ local Window = Rayfield:CreateWindow({
  local Button = Tab:CreateButton({
     Name = "🚫 Remove animation",
     Callback = function()
-        wait(1.2)
-        game.StarterGui:SetCore("SendNotification", {
-        Title = "Read Me!"; -- the title (ofc)
-        Text = "Game to old, it broke."; -- what the text says (ofc)
-        Icon = "rbxassetid://9181273951"; -- the image if u want. 
-        Duration = 5; -- how long the notification should in secounds
-        })
-        
+        for i,v in pairs(getgc(true)) do
+            if (typeof(v) == 'table' and rawget(v, 'OpenEgg')) then
+                v.OpenEgg = function()
+                    return
+                end
+            end
+         end
 end,
 })
 local Paragraph = Tab:CreateParagraph({Title = "❗ Take in mind!", Content = "Since the game is very old some pets are ghost pets, rejoin to fix it."})
@@ -52,7 +51,7 @@ local Paragraph = Tab:CreateParagraph({Title = "❗ Take in mind!", Content = "S
  local Section = Tab:CreateSection("Eggs")
 
  local Button = Tab:CreateButton({
-    Name = "🏠 Spawn Egg",
+    Name = "🥚 🏠 Spawn Egg",
     Callback = function()
         local args = {
             [1] = {
@@ -66,7 +65,7 @@ local Paragraph = Tab:CreateParagraph({Title = "❗ Take in mind!", Content = "S
  })
 
  local Button = Tab:CreateButton({
-    Name = "🏖️ Beach Egg",
+    Name = "🥚 🏖️ Beach Egg",
     Callback = function()
         local args = {
             [1] = {
@@ -80,7 +79,7 @@ local Paragraph = Tab:CreateParagraph({Title = "❗ Take in mind!", Content = "S
  })
 
  local Button = Tab:CreateButton({
-    Name = "🦁 Jungle Egg",
+    Name = "🥚 🦁 Jungle Egg",
     Callback = function()
         local args = {
             [1] = {
@@ -94,7 +93,7 @@ local Paragraph = Tab:CreateParagraph({Title = "❗ Take in mind!", Content = "S
  })
 
  local Button = Tab:CreateButton({
-    Name = "❄️ Winter Egg",
+    Name = "🥚 ❄️ Winter Egg",
     Callback = function()
         local args = {
             [1] = {
@@ -108,7 +107,7 @@ local Paragraph = Tab:CreateParagraph({Title = "❗ Take in mind!", Content = "S
  })
 
  local Button = Tab:CreateButton({
-    Name = "🌵 Desert Egg",
+    Name = "🥚 🌵 Desert Egg",
     Callback = function()
         local args = {
             [1] = {
@@ -122,7 +121,7 @@ local Paragraph = Tab:CreateParagraph({Title = "❗ Take in mind!", Content = "S
  })
 
  local Button = Tab:CreateButton({
-    Name = "🌋 Volcano Egg",
+    Name = "🥚 🌋 Volcano Egg",
     Callback = function()
         local args = {
             [1] = {
@@ -141,21 +140,21 @@ local Paragraph = Tab:CreateParagraph({Title = "❗ Take in mind!", Content = "S
 
 
  local Button = Tab:CreateButton({
-    Name = "🏠 Spawn > 🏖️ Beach",
+    Name = "💣 🏠 Spawn > 🏖️ Beach",
     Callback = function()
  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-23.859399795532227, 182.19984436035156, -145.986328125)
 end,
 })
 
 local Button = Tab:CreateButton({
-    Name = "🏖️ Beach > 🦁 Jungle",
+    Name = "💣 🏖️ Beach > 🦁 Jungle",
     Callback = function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-63.01378631591797, 144.5489501953125, -1002.842041015625)
 end,
 })
 
 local Button = Tab:CreateButton({
-    Name = "🦁 Jungle > ❄️ Winter",
+    Name = "💣 🦁 Jungle > ❄️ Winter",
     Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1922.877685546875, 3.5000298023223877, -1027.0048828125)
 end,
@@ -163,7 +162,7 @@ end,
 
 
 local Button = Tab:CreateButton({
-    Name = "❄️ Winter > 🌵 Desert",
+    Name = "💣 ❄️ Winter > 🌵 Desert",
     Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1403.4892578125, -13.00000286102295, 545.1258544921875)
 end,
@@ -171,9 +170,25 @@ end,
 
 
 local Button = Tab:CreateButton({
-    Name = "🌵 Desert > 🌋 Volcano",
+    Name = "💣 🌵 Desert > 🌋 Volcano",
     Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2721.21044921875, -6.500001430511475, -3221.4013671875)
+end,
+})
+
+local Section = Tab:CreateSection("Machines")
+
+local Button = Tab:CreateButton({
+    Name = "⚙️ 🏠 Spawn > ✨ Gold Machine",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(35.75335693359375, 117.84994506835938, 197.5372314453125)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "⚙️ ❄️ Winter > 🌈 Rainbow Machine",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1447.4847412109375, -13.00000286102295, 618.7947998046875)
 end,
 })
 
@@ -217,6 +232,99 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2622.810
 end,
 })
 
+local Section = Tab:CreateSection("Unreachable")
+
+
+local Button = Tab:CreateButton({
+    Name = "🚀 🏠 Spawn > The #1",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(106.02733612060547, 202.96983337402344, 20.487987518310547)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚀 🏠 Spawn > White Building",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-20.153766632080078, 118.19991302490234, 296.3897399902344)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚀 🏠 Spawn > Blue Building",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22.89812469482422, 118.19990539550781, 307.24798583984375)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚀 🏖️ Beach > House",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1467.12939453125, -13.00000286102295, 646.1835327148438)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚀 🦁 Jungle > The border",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1481.4853515625, 108.23774719238281, -764.7590942382812)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚀 ❄️ Winter > House",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1467.12939453125, -13.00000286102295, 646.1835327148438)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚀 ❄️ Winter > Small house",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1382.24609375, -13.00000286102295, 627.1671142578125)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚀 🌵 Desert > Parkour Barier",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2444.969482421875, 118.18055725097656, -3034.18310546875)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚀 🌵 Desert > Arena Water",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2296.04052734375, -30.750822067260742, -3158.89208984375)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚀 🌋 Volcano > Lava",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1323.32568359375, 203.50631713867188, -928.393798828125)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚀 🌋 Volcano > Wooden Plate",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1369.919189453125, 288.4984436035156, -888.732421875)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚀 🌋 Volcano > Lonely spot",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1108.083251953125, 237.8688507080078, -843.12060546875)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚀 🌋 Volcano > Broken Bridge",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1122.4306640625, 234.1181182861328, -1209.813232421875)
+end,
+})
 
 local Tab = Window:CreateTab("Autofarm", 12680192597) -- Title, Image
 
