@@ -1,0 +1,302 @@
+-- Yes you can skid it, but the name will be to popular lol
+
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "💹 value spirit > by voxlis",
+    LoadingTitle = "value spirit",
+    LoadingSubtitle = "by voxlis",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Big Hub"
+    },
+    Discord = {
+       Enabled = false,
+       Invite = "SIRIUS", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Sirius Hub",
+       Subtitle = "Key System",
+       Note = "Join the discord (discord.gg/sirius)",
+       FileName = "SiriusKey",
+       SaveKey = true,
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = "Hello"
+    }
+ })
+
+ local Tab = Window:CreateTab("Eggs", 12679477943) -- Title, Image
+
+ local Section = Tab:CreateSection("Eggs Extra")
+
+ local Button = Tab:CreateButton({
+    Name = "🚫 Remove animation",
+    Callback = function()
+        wait(1.2)
+        game.StarterGui:SetCore("SendNotification", {
+        Title = "Read Me!"; -- the title (ofc)
+        Text = "Game to old, it broke."; -- what the text says (ofc)
+        Icon = "rbxassetid://9181273951"; -- the image if u want. 
+        Duration = 5; -- how long the notification should in secounds
+        })
+        
+end,
+})
+local Paragraph = Tab:CreateParagraph({Title = "❗ Take in mind!", Content = "Since the game is very old some pets are ghost pets, rejoin to fix it."})
+
+
+
+ local Section = Tab:CreateSection("Eggs")
+
+ local Button = Tab:CreateButton({
+    Name = "🏠 Spawn Egg",
+    Callback = function()
+        local args = {
+            [1] = {
+                [1] = "1"
+            }
+        }
+        
+        workspace.__THINGS.__REMOTES:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+        
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "🏖️ Beach Egg",
+    Callback = function()
+        local args = {
+            [1] = {
+                [1] = "2"
+            }
+        }
+        
+        workspace.__THINGS.__REMOTES:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+        
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "🦁 Jungle Egg",
+    Callback = function()
+        local args = {
+            [1] = {
+                [1] = "3"
+            }
+        }
+        
+        workspace.__THINGS.__REMOTES:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+        
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "❄️ Winter Egg",
+    Callback = function()
+        local args = {
+            [1] = {
+                [1] = "4"
+            }
+        }
+        
+        workspace.__THINGS.__REMOTES:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+        
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "🌵 Desert Egg",
+    Callback = function()
+        local args = {
+            [1] = {
+                [1] = "5"
+            }
+        }
+        
+        workspace.__THINGS.__REMOTES:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+        
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "🌋 Volcano Egg",
+    Callback = function()
+        local args = {
+            [1] = {
+                [1] = "6"
+            }
+        }
+        
+        workspace.__THINGS.__REMOTES:FindFirstChild("buy egg"):InvokeServer(unpack(args))
+        
+    end,
+ })
+
+ local Tab = Window:CreateTab("Teleports", 6723742952) -- Title, Image
+
+ local Section = Tab:CreateSection("Cannons")
+
+
+ local Button = Tab:CreateButton({
+    Name = "🏠 Spawn > 🏖️ Beach",
+    Callback = function()
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-23.859399795532227, 182.19984436035156, -145.986328125)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🏖️ Beach > 🦁 Jungle",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-63.01378631591797, 144.5489501953125, -1002.842041015625)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🦁 Jungle > ❄️ Winter",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1922.877685546875, 3.5000298023223877, -1027.0048828125)
+end,
+})
+
+
+local Button = Tab:CreateButton({
+    Name = "❄️ Winter > 🌵 Desert",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1403.4892578125, -13.00000286102295, 545.1258544921875)
+end,
+})
+
+
+local Button = Tab:CreateButton({
+    Name = "🌵 Desert > 🌋 Volcano",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2721.21044921875, -6.500001430511475, -3221.4013671875)
+end,
+})
+
+local Section = Tab:CreateSection("Secrets!")
+
+local Button = Tab:CreateButton({
+    Name = "🚪 🏠 Spawn > Secret Entry",
+    Callback = function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-62.20262145996094, 117.78246307373047, 22.678241729736328)
+end,
+})
+
+local Button = Tab:CreateButton({
+    Name = "🚪 🏖️ Beach > Small Chests",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(152.1431121826172, 141.73291015625, -535.8733520507812)
+end,
+})
+
+
+local Button = Tab:CreateButton({
+    Name = "🚪 🦁 Jungle > Secret Entry",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1787.4940185546875, -41.617271423339844, -1066.562255859375)
+end,
+})
+
+
+local Button = Tab:CreateButton({
+    Name = "🚪 ❄️ Winter > Secret Entry!",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1472.8756103515625, -26.54042625427246, 667.6903686523438)
+end,
+})
+
+
+local Button = Tab:CreateButton({
+    Name = "🚪 🌵 Desert > Secret Entry!",
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2622.810302734375, -19.235984802246094, -3048.094970703125)
+end,
+})
+
+
+local Tab = Window:CreateTab("Autofarm", 12680192597) -- Title, Image
+
+local Section = Tab:CreateSection("Autofarm/Information")
+
+local Button = Tab:CreateButton({
+    Name = "🚜 Autofarm",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/noxizc/main/main/ps2"))()
+end,
+})
+
+local Paragraph = Tab:CreateParagraph({Title = "✨ Aura", Content = "The bigger the aura, the bigger the reach"})
+
+
+
+local Tab = Window:CreateTab("Player", 2795572800) -- Title, Image
+
+local Section = Tab:CreateSection("Local Player")
+
+local Button = Tab:CreateButton({
+    Name = "🏃‍♂️ Rejoin!",
+    Callback = function()
+        local ts = game:GetService("TeleportService")
+        local p = game:GetService("Players").LocalPlayer
+        ts:Teleport(game.PlaceId, p)
+end,
+})
+
+local Slider = Tab:CreateSlider({
+    Name = "Walk Speed",
+    Range = {0, 1000},
+    Increment = 10,
+    Suffix = "Speed",
+    CurrentValue = 10,
+    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+    -- The function that takes place when the slider changes
+    -- The variable (Value) is a number which correlates to the value the slider is currently at
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end,
+ })
+
+ local Slider = Tab:CreateSlider({
+    Name = "Jump Power",
+    Range = {0, 1000},
+    Increment = 10,
+    Suffix = "Power",
+    CurrentValue = 10,
+    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+    -- The function that takes place when the slider changes
+    -- The variable (Value) is a number which correlates to the value the slider is currently at
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+    end,
+ })
+
+
+ local Slider = Tab:CreateSlider({
+    Name = "Gravity",
+    Range = {0, 1000},
+    Increment = 10,
+    Suffix = "Value",
+    CurrentValue = 10,
+    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+    -- The function that takes place when the slider changes
+    -- The variable (Value) is a number which correlates to the value the slider is currently at
+    workspace.Gravity = tonumber(Value) or 196.2
+    end,
+ })
+
+
+
+ if game:GetService("Workspace").voxlis then
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "YOOO!!!!!!"; -- the title (ofc)
+        Text = "THE OWNER IS INGAME! voxlis"; -- what the text says (ofc)
+        Icon = "rbxassetid://9181273951"; -- the image if u want. 
+        Duration = 45; -- how long the notification should in secounds
+        })
+ end
+
