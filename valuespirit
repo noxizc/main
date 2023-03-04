@@ -44,7 +44,7 @@ local Window = Rayfield:CreateWindow({
          end
 end,
 })
-local Paragraph = Tab:CreateParagraph({Title = "❗ Take in mind!", Content = "Since the game is very old some pets are ghost pets, rejoin to fix it."})
+local Paragraph = Tab:CreateParagraph({Title = "❗ Take in mind!", Content = "Since the game is very old, some pets are ghost pets, rejoin to fix it."})
 
 
 
