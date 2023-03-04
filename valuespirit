@@ -339,6 +339,32 @@ end,
 
 local Paragraph = Tab:CreateParagraph({Title = "✨ Aura", Content = "The bigger the aura, the bigger the reach"})
 
+local Section = Tab:CreateSection("Resource Saver")
+
+local Toggle = Tab:CreateToggle({
+    Name = "🖥️ GPU Saver",
+    CurrentValue = true,
+    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        game:GetService("RunService"):Set3dRenderingEnabled(Value)
+    end,
+ })
+
+local Paragraph = Tab:CreateParagraph({Title = "🖥️ GPU Saver", Content = "Doesn't use you'r GPU, thats all."})
+
+local Slider = Tab:CreateSlider({
+    Name = "🖥️ CPU Saver",
+    Range = {0, 60},
+    Increment = 1,
+    Suffix = "Frames Per Second",
+    CurrentValue = 60,
+    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+setfpscap(Value)
+    end,
+ })
+
+ local Paragraph = Tab:CreateParagraph({Title = "🖥️ CPU Saver", Content = "The lower the FPS, the bigger the ping. [ 20 Recommended ]"})
 
 
 local Tab = Window:CreateTab("Player", 2795572800) -- Title, Image
@@ -346,7 +372,7 @@ local Tab = Window:CreateTab("Player", 2795572800) -- Title, Image
 local Section = Tab:CreateSection("Local Player")
 
 local Button = Tab:CreateButton({
-    Name = "🏃‍♂️ Rejoin!",
+    Name = "🎮 Rejoin!",
     Callback = function()
         local ts = game:GetService("TeleportService")
         local p = game:GetService("Players").LocalPlayer
@@ -354,8 +380,15 @@ local Button = Tab:CreateButton({
 end,
 })
 
+local Button = Tab:CreateButton({
+    Name = "🐸 Server-Hop!",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/noxizc/main/main/serverhop"))()
+end,
+})
+
 local Slider = Tab:CreateSlider({
-    Name = "Walk Speed",
+    Name = "🏃‍♀️ Walk Speed",
     Range = {0, 1000},
     Increment = 10,
     Suffix = "Speed",
@@ -369,7 +402,7 @@ local Slider = Tab:CreateSlider({
  })
 
  local Slider = Tab:CreateSlider({
-    Name = "Jump Power",
+    Name = "🦘 Jump Power",
     Range = {0, 1000},
     Increment = 10,
     Suffix = "Power",
@@ -384,7 +417,7 @@ local Slider = Tab:CreateSlider({
 
 
  local Slider = Tab:CreateSlider({
-    Name = "Gravity",
+    Name = "🧲 Gravity",
     Range = {0, 1000},
     Increment = 10,
     Suffix = "Value",
@@ -400,12 +433,22 @@ local Slider = Tab:CreateSlider({
 
 
  if game:GetService("Workspace").voxlis then
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "YOOO!!!!!!"; -- the title (ofc)
-        Text = "THE OWNER IS INGAME! voxlis"; -- what the text says (ofc)
-        Icon = "rbxassetid://9181273951"; -- the image if u want. 
-        Duration = 45; -- how long the notification should in secounds
-        })
+    Rayfield:Notify({
+        Title = "Suprise!",
+        Content = "The owner of value spirit is in the server!",
+        Duration = 6.5,
+        Image = 10820820764,
+        Actions = { -- Notification Buttons
+           Ignore = {
+              Name = "Zamny!",
+              Callback = function()
+              print("The user tapped Okay!")
+           end
+        },
+     },
+     })
  end
+
+ game:GetService("CoreGui").PlayerList.PlayerListMaster.OffsetFrame.PlayerScrollList.SizeOffsetFrame.ScrollingFrameContainer.ScrollingFrameClippingFrame.ScollingFrame.OffsetUndoFrame["p_104336994"].ChildrenFrame.NameFrame.BGFrame.OverlayFrame.PlayerName.PlayerName.Text = "🛠️ Josh"
 
 
