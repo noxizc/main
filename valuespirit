@@ -3,7 +3,7 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-    Name = "🍃 value spirit > Pe Simulator 2",
+    Name = "🍃 value spirit > Pet Simulator 2",
     LoadingTitle = "🍃 value spirit",
     LoadingSubtitle = "by voxlis",
     ConfigurationSaving = {
